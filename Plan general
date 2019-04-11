@@ -1,0 +1,53 @@
+Plan general
+
+geomphon-perception-ABX/experiments/pilot_Aug_2018
+
+Differences avec pilot_Jul_2018 (d'apres le README) :
+Nouveaux stimulis (enregistrements d'anglais natifs, consonnes et voyelles).
+
+Creation de stimuli :
+
+1. On trouve dans le doc Stimuli :
+	Stimuli/raw :
+	des enregistrements complets (ewan.wav,amelia_consonants.wav,amelia_vowels.wav) et leurs textgrids correspondantes. (amelia_consonants_ONLY_TARGET_CHECKED.TextGrid etc) 
+
+	2. save_intervals_to_wavs.py :script for cutting out just target words and saving them as separate .wavs. (bien dans stimuli)
+
+3. generate triplet list  triplets.csv:  a list of all possible triplets (au-dessus de stimuli)
+
+
+4. create_stimlist.py : a script that takes triplets.csv and filters it to create an optimised stimuli list, expressed as zeros and ones. (au-dessus de stimuli et en R pas en python)
+
+5. reformat_stimlist.R takes created stimuli list from create_stimlist.py and meta information and  reformats to match optimised list to strings that are filenames.  This new reformatted stimuli list is saved as as a .txt file to read in to Praat (Praat script will take only txt file) (introuvable)
+
+	6. concatenation_of_tripets.Praat : takes the stimlist created by reformat_stimlist.R and the .wavs created by save_intervals_to_wavs.Praat, and creates triplet files. Note that all files must be the same sampling frequency, even silences (bien dans stimuli)
+
+7. Bash script geomphon_Aug_2018.sh which runs all the above 6 steps in the above order. (Makefile???)
+
+
+
+Stimuli/mp3s : contient des anciens scripts praat et fichiers stimuli a supprimer (ici que des .mp3)
+Stimuli/oggs : meme chose qu'au-dessus mais avec des .ogg
+Stinuli/stimuli_intervals : contients des fichiers .wav de voyelles et consonnes separees par save_intervals_to_wavs.py
+stimuli/combine_triplet_meta_information.Rscript. : Combine triplet meta information files
+stimuli/concatenate_intervals.py. : CONCATENATE INTERVAL .wavs into full wav
+stimuli/item_meta_information.csv. : contient les meta informations, removes old anon output and results.
+stimuli/item_meta_information_with_distances.csv : contient les distances, added august distance file.
+stimuli/meta_info_filelist.csv : make new interval folder structure (c'est une structure).
+
+
+Fin fichier stimuli
+
+
+
+
+
+
+
+
+
+
+
+
+
+
