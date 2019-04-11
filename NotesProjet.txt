@@ -1,0 +1,33 @@
+Déroulement du programme
+
+1) Création des stimuli à l'aide des enregistrements et des textsGrid
+
+- Texts Grid utiles pour quoi exactement ?
+- Différence entre le dossier Stimuli et stimulus_construction ?
+- Redoublement de mots
+
+[](https://www.notion.so/4f524e1613e54b9aabe00a58a6c7bf8b#b5a43fbe2e9b4d07ab644cfd4cd77382)
+
+- 3 formats de fichiers audio
+- On a les fichiers :
+    - save_intervals_to_wavs.py
+    - triplet.csv → Dans le repo de base, pas dans le dossier Stimuli
+    - create_stimuli.R et non py (dans le READM) → Pareil, pas dans le fichier
+    - reformat_stimulist → Pas présent
+    - concatenation_of_triplets.Praat
+    - Bash script → s'appelle MakeFile ?
+
+Dans le Makefile : On 
+
+- Triplet liste
+- distances dans le dossier distance
+- stimulus_list
+- item_meta_information_with_distances
+- dossier stimuli intervals créée→ save_intervals_to_wavs
+- Création du dossier anonyme
+- Création de split_output_to_results_files → Results, pre-survey etc
+- 
+
+[](https://www.notion.so/4f524e1613e54b9aabe00a58a6c7bf8b#3d5c5f330653437f9a4442ed5533f568)
+
+Donc pas dans le bon ordre entre makefile et readMe ?
