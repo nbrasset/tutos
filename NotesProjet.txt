@@ -31,3 +31,6 @@ Dans le Makefile : On
 [](https://www.notion.so/4f524e1613e54b9aabe00a58a6c7bf8b#3d5c5f330653437f9a4442ed5533f568)
 
 Donc pas dans le bon ordre entre makefile et readMe ?
+
+Juillet :
+Problème dans le fichier de stimuli -> Besoin de séparer en différents dossier ou de supprimer des données. -> Une réorganisation du fichier est à faire
